@@ -12,6 +12,9 @@ html,body {
     margin: 0px;
     padding:0px;
     overflow-x: hidden;
+}
+
+body {
     background-image: url(/images/bg2.png);
     background-repeat: no-repeat;
     background-size: 760px;
@@ -101,8 +104,6 @@ a.nav-link:focus-visible {
     text-decoration: none;
 }
 
-
-
 .head-text span {
     color: #ed194b;
 }
@@ -122,21 +123,15 @@ a.nav-link:focus-visible {
     text-decoration: none;
 }
 
-.about-me-container {
-    background-color: #f8f8f8 !important;
+.section {
     margin: 0px;
     padding: 0px;
     height: 350px;
     width: 100% !important;
     display: block;
-    background-image: url(/images/c1.png);
-    background-repeat: no-repeat;
-    background-position-y: 100%;
-    background-position-x: 50%;
-    background-size: 120px;
 }
 
-.about-me-content {
+.section-content {
     height: inherit;
     padding-left: 12rem !important;
     padding-right: 12rem !important;
@@ -144,20 +139,16 @@ a.nav-link:focus-visible {
     vertical-align: middle;
 }
 
-.about-me-h2 {
-    float: left;
-    font-size: 40px !important;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 300 !important;
-    color: #292929;
+.about-me {
+    background-color: #dfdfdff5;
 }
 
-.about-me-h2::after {
-    content: "";
-    display: block;
-    width: 32px;
-    padding-top: 3px;
-    border-bottom: 4px solid #ed194b;
+.services {
+    background-color: #fff;
+}
+
+.section-content p, .section-content h2{
+    margin-bottom: 0px;
 }
 
 .about-me-para {
@@ -166,40 +157,7 @@ a.nav-link:focus-visible {
     float: right;
 }
 
-.carousel, .carousel-inner, .carousel-item {
-    width: 600px !important;
-    grid-gap: 100px !important;
-}
-      
-.cards {
-    justify-content: center;
-    padding-top: 9rem;
-    display: grid;
-    height: 370px;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 15px;
-    color: white;
-}
-
-.services-container {
-    background-color: #fff;
-    margin: 0px;
-    padding: 0px;
-    height: 400px;
-    width: 100% !important;
-    display: grid;
-}
-
-.services-content {
-    height: inherit;
-    padding-left: 12rem !important;
-    padding-right: 12rem !important;
-    display: table-cell;
-    vertical-align: middle;
-}
-
-.services-h2 {
-    padding-top: 2rem;
+.h2-side {
     float: left;
     font-size: 40px !important;
     font-family: 'Raleway', sans-serif;
@@ -207,10 +165,19 @@ a.nav-link:focus-visible {
     color: #292929;
 }
 
-.services-h2::after {
+.h2-side::after {
     content: "";
     display: block;
     width: 32px;
     padding-top: 3px;
     border-bottom: 4px solid #ed194b;
+}
+
+.blue {
+    background-color: rgb(175, 190, 255);
+    height: 100px;
+}
+
+.carousel {
+    /* width: 500px !important; */
 }
